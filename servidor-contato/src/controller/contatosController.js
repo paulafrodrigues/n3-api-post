@@ -7,7 +7,9 @@ const getAll = (request, response) => {
 
 
 const add = (request, response) => {
- model.agenda.contatos.push(request.body);
+  let contato = request.body
+  contato.id = Math.random().toString(36).substr(-8)
+ model.agenda.contatos.push(contato);
  response.status(200).send()
 
 }
