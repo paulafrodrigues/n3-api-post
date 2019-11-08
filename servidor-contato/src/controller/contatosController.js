@@ -1,3 +1,4 @@
+
 const model = require("../model/contatos");
 
 const getAll = (request, response) => {
@@ -24,7 +25,11 @@ const add = (request, response) => {
   
  
 
+
+
 module.exports = {
   getAll,
   add
+
 }
+
