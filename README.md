@@ -34,7 +34,7 @@ npm install body-parser --save
 ##### Desafio da 4a. feira!
 O post geralmente é feito pra criar um registro único na base de dados. 
 Neste momento sabemos acrescentar um ID ao nosso objeto. Então agora você vai precisar:
-- [ ] Salvar apenas contatos diferentes. Não queremos salvar contatos repetidos na nossa base de dados;
+- [ ] Salvar apenas contatos diferentes. Não queremos salvar contatos repetidos na nossa base de dados; - feito
 - [ ] Será que dá pra confiar no usuário? :grimacing: Se o usuário não enviar as informações corretas, não permita que o servidor grave esses dados. Exemplo de objeto que deve ser enviado via Postman:
 ``` 
 {
@@ -42,4 +42,4 @@ Neste momento sabemos acrescentar um ID ao nosso objeto. Então agora você vai 
 	"dataNascimento": "10/12/1815",
 	"celular": "988888888"
 }
-```
+
