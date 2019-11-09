@@ -60,3 +60,8 @@ Ok, dado que a gente sabe salvar um contato inédito na agenda e nós temos a da
 ###### Extra do Extra
 - [ ] Após cadastrar  um novo contato, além do signo, devolva quantos semanas o contato já viveu.
 - [ ] Se o dia do aniversário da pessoa for 08/11/2019, devolva uma mensagem de paz :heart:
+
+var date1 = new Date(1387050870 * 1000);
+var date2 = new Date("2012-12-15");
+var dif = Math.round(date1-date2);
+alert(Math.round(dif/1000/60/60/24/7));

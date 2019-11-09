@@ -41,8 +41,10 @@ const informarSigno = (mes, dia) => {
   } else if (mes == 11 && dia > 19 || mes == 0 && dia < 20) {
     return "Capricórnio"
   }
-
 }
+
+
+
 
 
 const add = (request, response) => {
@@ -58,6 +60,8 @@ const add = (request, response) => {
 
     let dataConvertida = converterData(contato.dataNascimento);
     contato.signo = informarSigno(dataConvertida.getMonth(), dataConvertida.getDate())
+    // let dataNasc = dataConvertida;
+    // let dataAtual = today = new Date()
     model.agenda.contatos.push(contato)
   }
   response.status(200).send("Oi " + contato.nome + " feliz que você é do signo de " + contato.signo)
