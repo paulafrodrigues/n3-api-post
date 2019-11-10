@@ -38,7 +38,7 @@ Neste momento sabemos acrescentar um ID ao nosso objeto. Então agora você vai 
 
 =======
 - [x] Salvar apenas contatos diferentes. Não queremos salvar contatos repetidos na nossa base de dados;
-- [ ] Será que dá pra confiar no usuário? :grimacing: Se o usuário não enviar as informações corretas, não permita que o servidor grave esses dados. Exemplo de objeto que deve ser enviado via Postman:
+- [x] Será que dá pra confiar no usuário? :grimacing: Se o usuário não enviar as informações corretas, não permita que o servidor grave esses dados. Exemplo de objeto que deve ser enviado via Postman:
 ``` 
 {
 	"nome": "Ada Lovelace",
@@ -54,7 +54,7 @@ Neste momento sabemos acrescentar um ID ao nosso objeto. Então agora você vai 
 
 Ok, dado que a gente sabe salvar um contato inédito na agenda e nós temos a data de nascimento, que tal se a gente conseguir informar qual o signo do nosso novo contatinho? :eyes:
 
-- [ ] Depois de incluir o contato, retorne a mensagem "Oi [Pessoa incríve]] feliz que você é do signo de [o signo vai aqui]"
+- [x] Depois de incluir o contato, retorne a mensagem "Oi [Pessoa incríve]] feliz que você é do signo de [o signo vai aqui]"
 
 
 ###### Extra do Extra

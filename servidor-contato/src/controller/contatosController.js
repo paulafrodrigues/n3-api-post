@@ -15,7 +15,7 @@ const converterData = (dataNascimento) => {
 }
 
 const informarSigno = (mes, dia) => {
-  console.log(mes, dia)
+  
   if (mes == 0 && dia > 20 || mes == 1 && dia < 19) {
     return "Aquário"
   } else if (mes == 1 && dia > 19 || mes == 2 && dia < 20) {
@@ -44,6 +44,7 @@ const informarSigno = (mes, dia) => {
 }
 
 
+    
 
 
 
@@ -60,9 +61,17 @@ const add = (request, response) => {
 
     let dataConvertida = converterData(contato.dataNascimento);
     contato.signo = informarSigno(dataConvertida.getMonth(), dataConvertida.getDate())
-    // let dataNasc = dataConvertida;
-    // let dataAtual = today = new Date()
+    const contarTempo = (dataNascimento) => {
+      let dataNasc = dataConvertida
+      let dataAtual = new Date()
+      let contagemTempo = dataNasc > dataAtual ? dataNasc - dataAtual : dataAtual - dataNasc
+      return Math.floor(contagemTempo / (24*3600*1000*7));
+    }
+    let semanasVividas = contarTempo(contato.dataNascimento)
+    contato.tempoVivido = semanasVividas + " semanas!"
     model.agenda.contatos.push(contato)
+
+    
   }
   response.status(200).send("Oi " + contato.nome + " feliz que você é do signo de " + contato.signo)
 }
