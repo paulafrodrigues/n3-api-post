@@ -58,7 +58,7 @@ Ok, dado que a gente sabe salvar um contato inédito na agenda e nós temos a da
 
 
 ###### Extra do Extra
-- [ ] Após cadastrar  um novo contato, além do signo, devolva quantos semanas o contato já viveu.
+- [x] Após cadastrar  um novo contato, além do signo, devolva quantos semanas o contato já viveu.
 - [ ] Se o dia do aniversário da pessoa for 08/11/2019, devolva uma mensagem de paz :heart:
 
 var date1 = new Date(1387050870 * 1000);

@@ -1,7 +1,6 @@
- {
+{
   "name": "servidor-contato",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "nodemon": "nodemon server",
@@ -17,5 +16,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
-  }
+  },
+  "description": ""
 }
